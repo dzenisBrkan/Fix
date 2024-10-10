@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3vejE8xUyk/GrBl1DdplxMar6M7lkYsW6CNxfbkjbZw=",
+  "Source": "FIX.API",
+  "BasePath": "_content/FIX.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

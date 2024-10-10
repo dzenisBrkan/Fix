@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FIX.API.props" />
+</Project>
