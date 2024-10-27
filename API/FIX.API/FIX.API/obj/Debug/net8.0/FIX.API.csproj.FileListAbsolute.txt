@@ -135,3 +135,4 @@ C:\Fix\API\FIX.API\FIX.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runti
 C:\Fix\API\FIX.API\FIX.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Fix\API\FIX.API\FIX.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Fix\API\FIX.API\FIX.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Fix\API\FIX.API\FIX.API\obj\Debug\net8.0\FIX.API.sourcelink.json
