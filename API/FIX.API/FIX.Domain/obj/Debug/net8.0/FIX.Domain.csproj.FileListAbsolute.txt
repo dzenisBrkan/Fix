@@ -1,0 +1,12 @@
+C:\develop\Fix\API\FIX.API\FIX.Domain\bin\Debug\net8.0\FIX.Domain.deps.json
+C:\develop\Fix\API\FIX.API\FIX.Domain\bin\Debug\net8.0\FIX.Domain.dll
+C:\develop\Fix\API\FIX.API\FIX.Domain\bin\Debug\net8.0\FIX.Domain.pdb
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.AssemblyInfoInputs.cache
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.AssemblyInfo.cs
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.csproj.CoreCompileInputs.cache
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.sourcelink.json
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.dll
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\refint\FIX.Domain.dll
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\FIX.Domain.pdb
+C:\develop\Fix\API\FIX.API\FIX.Domain\obj\Debug\net8.0\ref\FIX.Domain.dll

@@ -1,6 +1,4 @@
-﻿using FIX.API.Data;
-using FIX.API.Models.Domain;
-using FIX.API.Models.DTO;
+﻿using FIX.Application.Interfaces.Mechanic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FIX.API.Controllers
@@ -9,42 +7,19 @@ namespace FIX.API.Controllers
     [ApiController]
     public class MechanicsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IMechanicService _mechanicService;
 
-        public MechanicsController(ApplicationDbContext context)
+        public MechanicsController(IMechanicService mechanicService)
         {
-            _context = context;
+            _mechanicService = mechanicService;
         }
+
 
         [HttpGet]
-        public IList<Mechanics> Index()
+        public async Task<IActionResult> GetAll()
         {
-            var list = _context.Mechanics.ToList();
-
-            return list;
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> CreateMechanic(CreateMehanicDto request)
-        {
-            var mechanic = new Mechanics
-            {
-                mechanic_name = request.mechanic_name,
-                mechanic_surname = request.mechanic_surname,
-                mechanic_shop_name = request.mechanic_shop_name,
-                mechanic_type = request.mechanic_type,
-                location = request.location,
-                is_logged_in = request.is_logged_in,
-                rating = request.rating,
-                working_hours = request.working_hours,
-                services_offered = request.services_offered,
-                profile_created_at = DateTime.Now
-            };
-
-            await _context.Mechanics.AddAsync (mechanic);
-            await _context.SaveChangesAsync();
-
-            return Ok();
+            var mechanics = await _mechanicService.GetAllMechanicsAsync();
+            return Ok(mechanics);
         }
     }
-} 
+}

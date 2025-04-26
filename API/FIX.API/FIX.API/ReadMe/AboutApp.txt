@@ -1,0 +1,66 @@
+﻿--------------------------  Application Flow(Example)  --------------------------  
+
+FLow 1: User opens app → searches for workshop or mechanic by location, car brand specialization, or rating.
+
+Flow 2: User sees mechanic/workshop details → sees services offered → checks ratings and comments.
+
+FLow 3: User can also search/buy car parts from car part shops.
+
+
+
+--------------------------  Application arthitecture  --------------------------  
+        
+        /MyApp.Api           (existing - your WebApi)
+    - Controllers/
+    - Program.cs
+    - Startup.cs (if using)
+
+ /MyApp.Domain        (new project)
+    - Entities (your tables like Mechanic, Review etc.)
+
+ /MyApp.Application   (new project)
+    - Dtos/
+    - Interfaces/
+    - Services/
+
+ /MyApp.Infrastructure (new project)
+    - Data (DbContext)
+    - Repository implementations
+    - Seeders
+
+
+/Domain
+    /Entities(Mechanic, Workshop, etc.)
+/Application
+    /Services(Interfaces + Logic)
+/Infrastructure
+    /Persistence(EF Core DbContext)
+/API
+
+
+
+
+--------------------------  Napredne funkcionanlosti  --------------------------  
+
+ Small Enhancements You Could Add Later:
+
+ 1. Booking an appointment with mechanic
+
+ 2. Showing mechanic availability(calendar)
+
+ 3. Allow mechanics to register themselves.
+
+ 4. CarPartShop online ordering system.
+
+ 5. Admin panel to approve mechanics or shops.
+
+
+
+ 
+--------------------------  Model Update  --------------------------
+
+  Expand this table to Apintment Model
+  Design the Appointment Model:
+
+  Fields: userId, mechanicId, serviceType, appointmentDate, appointmentTime, status, createdAt, updatedAt.
+  Enum for status: pending, confirmed, rejected, completed.
